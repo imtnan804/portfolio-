@@ -1,3 +1,10 @@
+import smartCampusImage from "../assets/images/Smart University Platform Infographic.png";
+import universityEventImage from "../assets/images/University Event Management App Showcase.png";
+import ecommerceImage from "../assets/images/ShopZone E-Commerce UI Showcase-1.png";
+import campusVotingImage from "../assets/images/University Voting System Infographic.png";
+import socialMediaImage from "../assets/images/Campus Social Media App Showcase.png";
+import utilityAppImage from "../assets/images/Multi-Tool Utility App Showcase.png";
+
 export interface Project {
   id: string;
   title: string;
@@ -29,7 +36,7 @@ export const projectsData: Project[] = [
     shortDescription: "IoT-based attendance tracking integrated with the application backend, dynamic application tracking workflow for student requests and approvals, and AI-assisted functionality to support users.",
     fullDescription: "An enterprise-grade campus management ecosystem connecting physical classroom hardware directly to administrative databases. The system replaces error-prone manual roll calls with automated RFID/biometric sensor gates that push scan events over MQTT/REST to the central server in real time. Beyond attendance, the platform houses a state machine workflow for student academic requests (transcripts, course drops, leaves) with multi-tier faculty sign-offs, and an embedded AI assistant that provides 24/7 instant answers to campus policy inquiries.",
     featured: true,
-    image: "/src/assets/images/smart_campus_iot_1793290791817.jpg",
+    image: smartCampusImage,
     techStack: ["IoT / RFID Sensors", "Node.js", "Express", "React", "MySQL", "AI Assistant", "REST APIs", "WebSockets"],
     metrics: [
       { label: "Hardware Latency", value: "<150ms" },
@@ -63,7 +70,7 @@ export const projectsData: Project[] = [
     shortDescription: "Create, manage, and track university events and attendee participation with real-time registration and digital QR ticket verification.",
     fullDescription: "A specialized mobile and organizer platform built for university societies, academic symposiums, and cultural festivals. Organizers can publish events with speaker schedules, venue maps, and seat quotas, while students browse upcoming activities, RSVP with one tap, and receive digital QR entry passes synced directly to their mobile wallets.",
     featured: false,
-    image: "/src/assets/images/university_event_app_1793290790969.jpg",
+    image: universityEventImage,
     techStack: ["Android (Kotlin)", "Flutter", "Firebase Firestore", "QR Code Engine", "Cloud Messaging"],
     metrics: [
       { label: "QR Check-In Speed", value: "1.2s / attendee" },
@@ -94,7 +101,7 @@ export const projectsData: Project[] = [
     shortDescription: "Product listings, cart, and checkout flow with high-performance responsive catalog browsing, category filtering, and transaction state handling.",
     fullDescription: "A clean, modern online shopping experience built for speed and reliability. Features structured product catalogs, multi-attribute filtering (brand, category, price range), a persistent client-side cart drawer with reactive stock computation, and a streamlined multi-step checkout workflow with client validation and mock order fulfillment.",
     featured: false,
-    image: "/src/assets/images/ecommerce_platform_1793290791333.jpg",
+    image: ecommerceImage,
     techStack: ["React", "JavaScript (ES6+)", "Node.js", "MySQL", "Tailwind CSS", "Payment API"],
     metrics: [
       { label: "Cart Update Latency", value: "<50ms" },
@@ -125,7 +132,7 @@ export const projectsData: Project[] = [
     shortDescription: "Web-based voting for university elections with secure vote submission, candidate profiles, and live result tracking.",
     fullDescription: "A tamper-resistant digital voting portal engineered for campus General Representative (GR) and Class Representative (CR) elections. Enforces strict single-vote-per-student constraints via institutional credentials, hides live tallies until voting closes or displays verified turnout meters, and provides election administrators with verifiable audit trails.",
     featured: false,
-    image: "/src/assets/images/campus_voting_system_1793290791235.jpg",
+    image: campusVotingImage,
     techStack: ["PHP", "Laravel", "MySQL", "JavaScript", "Role-Based Auth", "CSRF Protection"],
     metrics: [
       { label: "Ballot Integrity", value: "100% Unique" },
@@ -156,7 +163,7 @@ export const projectsData: Project[] = [
     shortDescription: "User connections and real-time chat, with core Facebook-like functionality including activity feeds, comments, and media uploads.",
     fullDescription: "A native mobile social networking application enabling university peers to interact, form study circles, share status updates with photos, and engage in instant one-on-one and group messaging. Features a responsive timeline feed, real-time typing indicators, and user presence detection.",
     featured: false,
-    image: "", // uses styled mockup frame fallback
+    image: socialMediaImage,
     techStack: ["Android (Java/Kotlin)", "Firebase Realtime DB", "Firebase Auth", "Cloud Storage", "WebSockets"],
     metrics: [
       { label: "Message Delivery", value: "<100ms" },
@@ -187,7 +194,7 @@ export const projectsData: Project[] = [
     shortDescription: "Mobile toolkit bundling 20+ utilities including flashlight, photo editing, unit converter, sensor gauges, and calculator tools.",
     fullDescription: "An all-in-one Android utility hub designed to eliminate the need for dozens of ad-heavy standalone tools. Packed with 20+ native tools that tap directly into device hardware APIs—ranging from CameraX flashlight controllers, sound level decibel meters using the microphone, and compass orientation via magnetometers, to offline photo filters and financial calculators.",
     featured: false,
-    image: "", // uses styled mockup frame fallback
+    image: utilityAppImage,
     techStack: ["Android", "Kotlin", "Hardware APIs", "CameraX", "SensorManager", "Canvas"],
     metrics: [
       { label: "Bundled Tools", value: "20+ Utilities" },
